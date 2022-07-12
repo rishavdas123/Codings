@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .new{
+            border: 2px solid black;
+            /* background-color: rgb(236, 164, 164); */
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(235, 61, 61);
+            background-color: rgb(151, 151, 241);
+        }
+        a:visited{
+            color: rgb(10, 16, 16);
+            background-color: rgb(223, 243, 145);
+        }
+        a:active{
+            background-color: rgb(185, 83, 100);
+        }
+        .btn{
+            /* background-color: rgb(176, 219, 176); */
+            color: rgb(127, 9, 238);
+            border-radius: 15px;
+            padding: 4px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: underline;
+            /* background-color: rgb(77, 3, 3); */
+        }
+        .wow{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Registration</h2>
+    <form action="backend.php">
+        <div>
+            <p class="new">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, recusandae!
+            <a href="https://www.yahoo.com" rel="" class="btn" target="_blank">>>Read more</a><button class="btn">Contact us</button></p>
+        </div>
+        <div class="wow">
+            Name:<input type="text" name="myName">
+        </div>
+        <br>
+        <div class="wow">
+            Roll:<input type="text" name="myRoll">
+        </div>
+        <br>
+        <div class="wow">
+            Email:<input type="email" name="myEmail">
+        </div>
+        <br>
+        <div class="wow">
+            Date of birth: <input type="date" name="myDate" id="">
+        </div>
+        <br>
+        <div class="wow">
+            <label for="name">Are you eligible:</label><input type="checkbox" name="myElig" id="name">
+        </div>
+        <br>
+        <div class="wow">
+            Gender: Male<input type="radio" name="myGen"> Female<input type="radio" name="myGen"> Other<input
+                type="radio" name="myGen">
+        </div>
+        <br>
+        <div class="wow">
+            Review:<textarea name="myText" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div class="wow">
+            <button id="classes">Show/Hide</button>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+        <br>
+
+    </form>
+</body>
+
+</html>

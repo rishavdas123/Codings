@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #btn {
+            padding: 10px 14px;
+            font-size: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            opacity: 0.5;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="date" onclick="change()">time</button>
+    <h1>Welcome to js Events</h1>
+    <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, ex ullam. Nostrum ex expedita
+        possimus optio dignissimos ab quaerat asperiores voluptatem sapiente molestiae pariatur odio ad, nemo deserunt
+        soluta cupiditate animi, quasi veniam voluptate similique! Quam officia architecto quos ad, provident quis
+        cumque nam dolor blanditiis laudantium incidunt expedita laboriosam voluptate sit quidem vitae culpa eos harum
+        quo saepe at voluptatem debitis pariatur. Ratione officiis debitis sint quod, mollitia fugiat obcaecati odit
+        iste quas fugit, quo suscipit error. Reiciendis voluptates quam iste enim cupiditate a fuga tempora quisquam,
+        mollitia obcaecati distinctio. Non odit illo amet deleniti fugiat voluptate rem quod ex quaerat nihil. Itaque
+        architecto harum cum consequuntur temporibus atque quo eius tempore debitis suscipit, quis optio, omnis ratione
+        facere voluptatibus consectetur? Totam voluptatibus dignissimos, inventore possimus qui magnam ullam ab
+        distinctio dolore nisi in sapiente labore pariatur odio saepe illo quibusdam reprehenderit odit repellat animi
+        quidem consectetur! Atque, voluptatem?</p>
+    <button onclick="toggle()" id="btn">Show / Hide</button>
+    <script>
+        para = document.getElementById('para');
+        // para.addEventListener('mouseover',function run(){
+        //     alert("Mouse Inside");
+        // });
+        function run() {
+            prompt("Mouse Inside");
+        }
+        function toggle() {
+            para = document.getElementById('para');
+            if (para.style.display == 'block')
+                para.style.display = 'none'
+            else
+                para.style.display = 'block'
+        }
+        function greet(name) {
+            console.log("Good Morning " + name);
+        }
+        function time() {
+            document.getElementById('date').innerHTML = Date();
+        }
+        function change() {
+            element = document.getElementById('date');
+            setTimeout(time, 4000);
+        }
+
+    </script>
+</body>
+
+</html>
